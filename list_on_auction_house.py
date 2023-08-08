@@ -13,7 +13,7 @@ import time, pyautogui
 
 
 #3165 1281
-original_slot_location = [3165, 1281]# THIS IS LOCATION OF MY FIRST INVENTORY SLOT I want to craft from
+original_slot_location = [3210, 1194]# THIS IS LOCATION OF MY FIRST INVENTORY SLOT I want to craft from
 # from this we fugre out all the other slots :)
 bag_width = 7
 
@@ -28,14 +28,14 @@ def select_from_bag(location):
 
 def place_into_auction_house():
     time.sleep(0.1)
-    pyautogui.moveTo(105,496)
+    pyautogui.moveTo(87 ,453)
     time.sleep(0.1)
     pyautogui.mouseUp()
     time.sleep(0.1) 
 
 def create_auction():
     time.sleep(0.1)
-    pyautogui.moveTo(298, 1142)
+    pyautogui.moveTo(266, 1037)#266 1037
     time.sleep(0.1)
     pyautogui.click()
     time.sleep(0.1) 

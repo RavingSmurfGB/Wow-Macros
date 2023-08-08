@@ -7,21 +7,24 @@ import pyautogui, time
 # Be sure to Drag mouse to the top left corner when you want to stop
 # 478 525
 
+
+
+
 def buy_searched_item():
     time.sleep(0.05)
-    pyautogui.moveTo(478, 525) # Click iten
+    pyautogui.moveTo(500, 469) # Click iten
     time.sleep(0.05)
     pyautogui.mouseDown()
     time.sleep(0.05)
     pyautogui.mouseUp()
     time.sleep(0.05)
-    pyautogui.moveTo(1605, 1194) # Click Buyout
+    pyautogui.moveTo(1447, 1087) # Click Buyout
     time.sleep(0.05)
     pyautogui.mouseDown()
     time.sleep(0.05)
     pyautogui.mouseUp()
     time.sleep(0.05)
-    pyautogui.moveTo(1762, 443) # Click accept
+    pyautogui.moveTo(1779,  410) # Click accept
     time.sleep(0.05)
     pyautogui.mouseDown()
     time.sleep(0.05)

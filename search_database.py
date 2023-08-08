@@ -7,7 +7,7 @@ import mysql.connector as mysql
 #GRANT SELECT ON tbccharacters.* TO 'tmp_root'@'10.3.0.165' WITH GRANT OPTION;
 #FLUSH PRIVILEGES;
 
-db_connection = mysql.connect(host='10.3.0.175', database="tbccharacters",user="tmp_root", password='Elfx61gt56t')
+db_connection = mysql.connect(host='10.3.0.175', database="tbcmangos",user="tmp_root", password='Elfx61gt56t')
 
 # Get a cursor
 database_cursor = db_connection.cursor()
@@ -26,7 +26,7 @@ for table in returned_data:
         database_cursor.execute("select * from " + table[2] + " ;") #################  WE GET ALL TABLES
         table_data = database_cursor.fetchall()
         #print(table_data)
-        if "Warglaive of Azzinoth" in table_data:
+        if "sys" in table_data:
             print(table_data)
     except Exception as e:
         #print("failed to connect to - " , table[2] , "// ERROR - " , e)
