@@ -5,12 +5,12 @@ import pyautogui, random, time
 
 while True:
 
-    delay = random.randint(0, 9)
+    delay = random.randint(1, 9)
     print("Waiting for - " + str(delay))
     time.sleep(delay)
-    pyautogui.keyDown('w')  # hold down the shift key
+    pyautogui.keyDown('w')
 
-    delay = random.randint(0, 9)
+    delay = random.randint(1, 9)
     print("Waiting for - " + str(delay))
     time.sleep(delay)
-    pyautogui.keyUp('w')    # release the shift keyw
+    pyautogui.keyUp('w')

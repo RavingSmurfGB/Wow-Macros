@@ -12,27 +12,27 @@ import pyautogui, time
 
 def buy_searched_item():
     time.sleep(0.05)
-    pyautogui.moveTo(552, 235) # Click iten
+    pyautogui.moveTo(1151, 1094) # Click enchant button
     time.sleep(0.05)
     pyautogui.mouseDown()
     time.sleep(0.05)
     pyautogui.mouseUp()
     time.sleep(0.05)
-    pyautogui.moveTo(1455, 880) # Click Buyout
+    pyautogui.moveTo(3247, 1215) # Click item
     time.sleep(0.05)
     pyautogui.mouseDown()
     time.sleep(0.05)
     pyautogui.mouseUp()
     time.sleep(0.05)
-    pyautogui.moveTo(1769, 412) # Click accept
+    pyautogui.moveTo(1776, 413) # Click replace enchant
     time.sleep(0.05)
     pyautogui.mouseDown()
     time.sleep(0.05)
     pyautogui.mouseUp()
+    time.sleep(4.5) # wait for enchance
 
 
 
 time.sleep(3) # startup pause
 while True:
     buy_searched_item()
-
